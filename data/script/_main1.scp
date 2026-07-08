@@ -81,7 +81,8 @@ Event02()
 	SendMessage("À¯Àú", "È¹µæ", "White Day Gift");	// Ãß°¡ ¾ÆÀÌÅÛ
 	SendMessage("À¯Àú", "È¹µæ", "So-young's Diary");
 
-	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢1");		// Àç¹Ì ¾ÆÀÌÅÛ
+	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢0");		// Àç¹Ì ¾ÆÀÌÅÛ
+	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢1");
 	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢2");
 	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢3");
 	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢4");
@@ -89,7 +90,6 @@ Event02()
 	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢6");
 	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢7");
 	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢8");
-	SendMessage("À¯Àú", "È¹µæ", "¹Ì±ÃÁ¶°¢9");
 
 	SendMessage("Å¸ÀÌ¸Ó", "½ºÅ©¸³Æ®¼³Á¤", "5 0 1 _main1.Event03");
 }
