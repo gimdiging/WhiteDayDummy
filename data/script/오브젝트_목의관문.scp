@@ -1,0 +1,84 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//						I t e m S c r i p t F i l e 
+//
+//  (C) Sonnori 2000			오브젝트_목의관문.scp
+//
+//	熱血man: matzzang		last update: 2000.07.22
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "use " + $WorkingFile);
+	SetObjValue("Step", 0);
+	SetObjValue("KeyName", "Piece of the 'Tree' Emblem");
+	SetObjValue("Lock", "$문_1층서무실옆방화셔터");
+}
+
+pick()
+{
+	$KeyName = GetObjValue("KeyName");
+	$Lock = GetValue(GetObjValue("Lock"));
+	$Step = GetObjValue("Step");
+	
+	if($Lock == LOCK)
+	{
+		if($Step == 0)
+		{
+			return "보기";
+		}
+		else
+		{
+			return GetObjValue("UserItem") == $KeyName ? "i목의조각" : "잡기";
+		}
+	}
+	return "";
+}
+
+click()
+{
+	$KeyName  = GetObjValue("KeyName");
+	$Lock = GetValue(GetObjValue("Lock"));
+	$Step = GetObjValue("Step");
+	
+	if($Lock == LOCK)
+	{
+		if($Step == 0)
+		{
+			if($LUM_STICK <= 128.0)
+			{
+				SendMessage("자막", "문자출력", "2,무언가 희미하게 보인다");
+			}
+			else
+			{
+				SendMessage("자막", "문자출력", "2,나무 '목'자가 음각되어 있다");
+			}
+			SetObjValue("Step", $Step + 1);
+		}
+		else
+		{
+			if(GetObjValue("UserItem") == $KeyName)
+			{
+				if($LUM_STICK <= 128.0)
+				{
+					SendMessage("자막", "문자출력", "2,너무 어둡다");
+				}
+				else
+				{
+					SetValue(GetObjValue("Lock"), UNLOCK);
+					SendMessage("", "페이드", "Recursive 1 1 0");
+					SendMessage("유저", "폐기", "Piece of the 'Tree' Emblem");
+				}
+			}
+			else
+			{
+				SendMessage("자막", "문자출력", "2,아무런 반응도 일어나지 않는다");
+			}
+		}
+	}
+}
