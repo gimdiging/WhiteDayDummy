@@ -24,12 +24,12 @@ Init()
 
 table.pick()
 {
-	return (GetObjValue("Step") == 2 && GetObjValue("UserItem") == "Luminous Stick") ? "iæﬂ±§Ω∫∆Ω" : "";
+	return (GetObjValue("Step") == 2 && GetObjValue("UserItem") == "Luminous Stick" && !$æ∆¿Ã≈€_æﬂ±§Ω∫∆Ω_√Ê¿¸¡ﬂ) ? "iæﬂ±§Ω∫∆Ω" : "";
 }
 
 table.click()
 {
-	if(GetObjValue("Step") == 2 && GetObjValue("UserItem") == "Luminous Stick")
+	if(GetObjValue("Step") == 2 && GetObjValue("UserItem") == "Luminous Stick" && !$æ∆¿Ã≈€_æﬂ±§Ω∫∆Ω_√Ê¿¸¡ﬂ)
 	{
 		SendMessage("¿Ø¿˙", "∆Û±‚", "Luminous Stick");
 		LoadObject("WObjStaticBody", "æﬂ±§Ω∫∆Ω", "*pos -831.1 10 1633.2 *rot 90 0 0 *pet data/puppet/item/æ∆¿Ã≈€_æﬂ±§∫¿.pet *scale 1.0 *script æ∆¿Ã≈€_æﬂ±§∫¿.Init2");
