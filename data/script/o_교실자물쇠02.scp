@@ -15,7 +15,7 @@
 Init()
 {
 	SendMessage("", "스크립트설정", "lock " + $WorkingFile);
-	SetObjValue("KeyName", "Master-Key");
+	SetObjValue("KeyName", "마스터키");
 	SetObjValue("iconname", "마스터키");
 }
 
@@ -130,7 +130,7 @@ Init중앙통로자물쇠()
 {
 	Init();
 	SetObjValue("Lock", "$문_중앙통로");
-	SetObjValue("KeyName", "Key of the Main Hallway");
+	SetObjValue("KeyName", "중앙통로열쇠");
 	SetObjValue("iconname", "중앙통로열쇠");
 	SendMessage("", "페이드", "Tube 0 1 0");
 	SendMessage("", "페이드", "Tube_leave 0 1 0");
@@ -175,14 +175,16 @@ click()
 				SendMessage("자막", "문자출력", "100,This is the end of WhiteDay demo version.\nPress ALT+F4 to exit.");
 			}
 
-			SendMessage("자막", "문자출력", "2,It's unlocked");
+//			SendMessage("자막", "문자출력", "2,It's unlocked");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text16");
 			SendMessage("사운드", "연주", "열쇠로자물쇠열기,열쇠로자물쇠열기.wav");
 			SetValue(GetObjValue("Lock"), UNLOCK);
 		}
 		else
 		{
 			SendMessage("사운드", "연주", "자물쇠흔드는소리,data\sound\자물쇠흔드는소리.wav");
-			SendMessage("자막", "문자출력", "2,It's locked");
+//			SendMessage("자막", "문자출력", "2,It's locked");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text17");
 		}
 	}
 }
