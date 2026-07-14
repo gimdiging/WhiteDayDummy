@@ -1,0 +1,40 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//					O b j e c t S c r i p t F i l e 
+//
+//  (C) Sonnori 2000				e_도난방지기.scp
+//
+//	熱血man: matzzang		last update: 2000.07.22
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "info " + $WorkingFile);
+	SetObjValue("Step", 0);
+	SetObjName("도난방지기");
+}
+
+pick()
+{
+	return GetObjValue("Step") == 0 ? "보기" : "잡기";
+}
+
+click()
+{
+	if(GetObjValue("Step") == 0)
+	{
+//		SendMessage("자막", "문자출력", "2,It's a security alarm");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text03");
+		SetObjValue("Step", GetObjValue("Step") + 1);
+	}
+	else
+	{
+//		SendMessage("자막", "문자출력", "3,To stop the operation, cut off the power");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text04");
+	}
+}

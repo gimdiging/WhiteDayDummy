@@ -1,0 +1,309 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//					O b j e c t S c r i p t F i l e 
+//
+//  (C) Sonnori 2000					e_나무아랫쪽.scp
+//
+//	熱血man: matzzang		last update: 2000.07.24
+//  --------------------------------------------------
+
+Init()
+{
+	SetObjName("나무아랫쪽");
+	SendMessage("배경", "켜기", "tree_down");
+	for($i = 1; $i <= 9; $i++)
+	{
+		SendMessage("", "스크립트설정", "egg" + $i + " " + $WorkingFile + ".egg" + $i);
+		SetObjValue("EggDead" + $i , FALSE);
+	}
+	SetObjValue("DeadCount", 4);
+	SetObjValue("DeadEggName", "");
+	SetObjValue("FadeStep", 255);
+
+	SendMessage("사운드", "연주3d", GetObjPos("나무아랫쪽") + " loop,모기소리,data/sound/event/모기앵앵.wav");
+}
+
+egg1.pick()
+{
+	return (GetObjValue("EggDead1") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg1.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead1") == FALSE)
+	{
+		SetObjValue("EggDead1", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere10");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg2.pick()
+{
+	return (GetObjValue("EggDead2") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg2.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead2") == FALSE)
+	{
+		SetObjValue("EggDead2", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere09");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg3.pick()
+{
+	return (GetObjValue("EggDead3") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg3.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead3") == FALSE)
+	{
+		SetObjValue("EggDead3", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere08");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg4.pick()
+{
+	return (GetObjValue("EggDead4") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg4.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead4") == FALSE)
+	{
+		SetObjValue("EggDead4", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere07");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg5.pick()
+{
+	return (GetObjValue("EggDead5") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg5.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead5") == FALSE)
+	{
+		SetObjValue("EggDead5", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere05");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg6.pick()
+{
+	return (GetObjValue("EggDead6") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg6.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead6") == FALSE)
+	{
+		SetObjValue("EggDead6", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere04");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg7.pick()
+{
+	return (GetObjValue("EggDead7") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg7.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead7") == FALSE)
+	{
+		SetObjValue("EggDead7", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere03");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg8.pick()
+{
+	return (GetObjValue("EggDead8") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg8.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead8") == FALSE)
+	{
+		SetObjValue("EggDead8", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere02");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+egg9.pick()
+{
+	return (GetObjValue("EggDead9") == FALSE && GetObjValue("UserItem") == "용제") ? "i용제" : "";
+}
+
+egg9.click()
+{
+	if(GetObjValue("UserItem") == "용제" && GetObjValue("EggDead9") == FALSE)
+	{
+		SetObjValue("EggDead9", TRUE);
+		SetObjValue("DeadEggName", "GeoSphere01");
+		SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.FadeOut0 *obj 나무아랫쪽");
+	}
+}
+
+FadeOut0()
+{
+	SendMessage("사운드", "연주", "data/sound/나무_괴로워.wav");
+	
+	SetObjValue("FadeStep", 255);
+	SetObjValue("FadeDelta", 255 / (30.0 * 1.0) + 1);
+	SendMessage("타이머", "스크립트설정", "0 0.03333 " + (30.0 * 1.0) + " e_나무아랫쪽.FadeOut1 *obj 나무아랫쪽");
+	
+	SendMessage("자막", "활성화", "");
+	SendMessage("자막", "와이드모드", "켜기");	
+	
+	SetObjValue("KillEnd", FALSE);
+	SendMessage("", "발광", GetObjValue("DeadEggName") + " on");
+}
+
+FadeOut1()
+{
+	$FadeStep  = GetObjValue("FadeStep");
+	$FadeDelta = GetObjValue("FadeDelta");
+
+	if($FadeStep >= 0)
+	{
+		SendMessage("", "발광색", GetObjValue("DeadEggName") + " " + $FadeStep + " " + $FadeStep + " " + $FadeStep);
+		SetObjValue("FadeStep", Max(Min($FadeStep - $FadeDelta, 255), 0));
+	}
+	if(GetObjValue("FadeStep") == 0)
+	{
+		if(GetObjValue("KillEnd") == FALSE)
+		{
+			SendMessage("타이머", "스크립트설정", "1 0 0 e_나무아랫쪽.FadeOut2 *obj 나무아랫쪽");
+			SetObjValue("KillEnd", TRUE);
+		}
+	}
+}
+
+FadeOut2()
+{
+	SendMessage("자막", "비활성", "");
+	SendMessage("자막", "와이드모드", "끄기");	
+	DeadCheck();
+}
+
+DeadCheck()
+{
+	SetObjValue("DeadCount", GetObjValue("DeadCount") - 1);
+	if(GetObjValue("DeadCount") == 0)
+	{
+		$Mission4_나무 = TRUE;
+
+		SendMessage("자막", "활성화", "");
+		SendMessage("자막", "와이드모드", "켜기");	
+
+		SendMessage("유저", "위치바라보기", "" + FindPoint("아랫나무"));
+
+		SendMessage("나무아랫쪽", "애니메이션", "죽기");
+		SendMessage("나무윗쪽", "애니메이션", "죽어있기");
+		DeleteObject("나무윗쪽줄기");
+
+		SendMessage("소영", "위치", "" + FindPoint("소영위치1"));
+		SendMessage("성아", "회전", "6");
+		SendMessage("소영", "애니메이션", "힘들어하기");
+		SendMessage("소영", "표정바꿔", "지침");
+
+		SendMessage("타이머", "스크립트설정", "3 0 1 e_나무아랫쪽.Dead");
+	}
+}
+
+Dead()
+{
+	SendMessage("유저", "쳐다보지말기", "");
+	
+	SendMessage("자막", "비활성", "");
+	SendMessage("자막", "와이드모드", "끄기");	
+}
+
+Event모기1()
+{
+	SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.e모기1 *obj 나무아랫쪽");
+}
+
+Event모기2()
+{
+	SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.e모기2 *obj 나무아랫쪽");
+}
+
+Event모기3()
+{
+	SendMessage("타이머", "스크립트설정", "0 0 1 e_나무아랫쪽.e모기3 *obj 나무아랫쪽");
+}
+
+e모기1()
+{
+	SetObjValue("모기공격", OFF);
+}
+
+e모기2()
+{
+	SetObjValue("모기공격", OFF);
+}
+
+e모기3()
+{
+	if(GetObjValue("모기공격") == OFF)
+	{
+		SetObjValue("모기공격", ON);
+		e모기공격();
+	}
+}
+
+e모기공격()
+{
+	if(GetObjValue("모기공격") == ON)
+	{
+		if(GetObjValue("UserItem") == "모기약")
+		{
+			SendMessage("자막", "활성화", "");
+			SendMessage("자막", "와이드모드", "켜기");	
+
+			SendMessage("사운드", "연주", "data/sound/모기약.wav");
+//			SendMessage("자막", "문자출력", "2,다죽어버려~~~");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text01");
+
+			LoadObject("WObjGas", "모기약연기", GetCameraInfo() + " *aabb -60 -60 -30 60 60 30 *velocity 4");
+			SendMessage("타이머", "스크립트설정", "2 0 1 e_나무아랫쪽.e모기약죽이기 *obj 나무아랫쪽");
+
+			SendMessage("타이머", "스크립트설정", "6 0 1 e_나무아랫쪽.e모기공격 *obj 나무아랫쪽");
+		}
+		else
+		{
+			SendMessage("유저", "공격", "");
+//			SendMessage("자막", "문자출력", "1,앗! 따가워~~, 모기약이 필요해~~~");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text02");
+
+			SendMessage("타이머", "스크립트설정", "2 0 1 e_나무아랫쪽.e모기공격 *obj 나무아랫쪽");
+		}
+	}
+}
+
+e모기약죽이기()
+{
+	DeleteObject("모기약연기");
+	SendMessage("자막", "비활성", "");
+	SendMessage("자막", "와이드모드", "끄기");	
+}

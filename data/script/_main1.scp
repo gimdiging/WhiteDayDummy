@@ -78,8 +78,8 @@ Event02()
 	SendMessage("유저", "획득", "핸드폰");
 	SendMessage("유저", "획득", "콜렉트");
 
-	SendMessage("유저", "획득", "White Day Gift");	// 추가 아이템
-	SendMessage("유저", "획득", "So-young's Diary");
+	SendMessage("유저", "획득", "선물봉투");	// 추가 아이템
+	SendMessage("유저", "획득", "소영다이어리");
 
 	SendMessage("유저", "획득", "미궁조각0");		// 재미 아이템
 	SendMessage("유저", "획득", "미궁조각1");
