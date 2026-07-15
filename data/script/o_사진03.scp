@@ -1,0 +1,59 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//						I t e m S c r i p t F i l e 
+//
+//  (C) Sonnori 2000				아이템_니뻐.scp
+//
+//	熱血man: matzzang		last update: 2000.07.22
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "item " + $WorkingFile);
+	SetObjName("사장님사진");
+	SetObjValue("Step", 0);
+}
+
+pick()
+{
+	return GetObjValue("Step") == 0 ? "보기" : "잡기"; 
+}
+
+click()
+{
+	$Step = GetObjValue("Step");
+	
+	switch($Step)
+	{
+		case 0:
+		{
+//			SendMessage("자막", "문자출력", "2,Oh~~ Passman~~");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text19");
+			break;
+		}
+		case 1:
+		{
+			GetItem();
+			break;
+		}
+	}
+	
+	SetObjValue("Step", $Step + 1);
+}
+
+GetItem()
+{
+	SendMessage("사장님사진", "페이드", "Recursive 1 1 0");
+	SendMessage("유저", "획득", "Passman");
+	SendMessage("타이머", "스크립트설정", "1 0 1 o_사진03.Release");
+}
+
+Release()
+{
+	DeleteObject("사장님사진");
+}
