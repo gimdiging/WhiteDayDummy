@@ -26,5 +26,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3,양동이다");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text20");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text24");
 }

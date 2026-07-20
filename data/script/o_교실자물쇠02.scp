@@ -176,7 +176,7 @@ click()
 			}
 
 //			SendMessage("자막", "문자출력", "2,It's unlocked");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text16");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text19");
 			SendMessage("사운드", "연주", "열쇠로자물쇠열기,열쇠로자물쇠열기.wav");
 			SetValue(GetObjValue("Lock"), UNLOCK);
 		}
@@ -184,7 +184,7 @@ click()
 		{
 			SendMessage("사운드", "연주", "자물쇠흔드는소리,data\sound\자물쇠흔드는소리.wav");
 //			SendMessage("자막", "문자출력", "2,It's locked");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text17");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text20");
 		}
 	}
 }

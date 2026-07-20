@@ -11,31 +11,31 @@ e_화재경보기.scp		10, 04
 e캐릭터_때리는놈.scp
 e캐릭터_맞는놈.scp
 flowchart.txt
-i_락스병.scp		11
-i_열쇠3.scp		12
-i_열쇠4.scp		13, 14
-o_고양이출몰장.scp		15
-o_교실자물쇠01.scp	16, 17
-o_교실자물쇠02.scp	16, 17
+i_락스병.scp		11, 12
+i_열쇠3.scp		13, 14
+i_열쇠4.scp		15, 16, 17
+o_고양이출몰장.scp		18
+o_교실자물쇠01.scp	19, 20
+o_교실자물쇠02.scp	19, 20
 o_금의부적.scp
 o_더미1.scp
 o_더미2.scp
-o_더미3.scp		18
-o_사진03.scp		19
-o_양동이.scp		20
+o_더미3.scp		21
+o_사진03.scp		22, 23
+o_양동이.scp		24
 o_창틀.scp
 _main1.scp
 _main2.scp
 _menu.scp
 _whiteday.scp
-대화#1-1.scp		21, 22, 23
-대화#1-2.scp		24, 25, 26
-대화#1-3.scp
+대화#1-1.scp		25, 26, 27
+대화#1-2.scp
+대화#1-3.scp		28, 29, 30, 31
 대화#1-4.scp
 대화#2-1.scp
 대화#3-1.scp
 대화#3-2.scp
-문_교실여닫이.scp		16, 17
+문_교실여닫이.scp		19, 20
 문_교장실.scp
 문_방화셔터.scp
 문_서무실.scp

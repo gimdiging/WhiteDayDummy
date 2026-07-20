@@ -66,7 +66,7 @@ Talking()
 		{
 			SendMessage("성아", "애니메이션", "쉬기");
 //			SendMessage("자막", "선택", "Who are you?\nI gotta meet someone here...\nIt's none of your business.");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text25");
 			break;
 		}
 		case 7:
@@ -86,7 +86,7 @@ Talking()
 				case 2:
 				{
 //					SendMessage("자막", "문자출력", "3, ......");
-					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text26");
 					SendMessage("성아", "표정바꿔", "책망");
 					SendMessage("타이머", "스크립트설정", "8 0 1 대화#1-1.Talking");
 					break;
@@ -102,7 +102,7 @@ Talking()
 		case 9:
 		{
 //			SendMessage("자막", "선택", "So, what are YOU doing here?\nWhere is the classroom 2-8?");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text23");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text27");
 			break;
 		}
 		case 10:

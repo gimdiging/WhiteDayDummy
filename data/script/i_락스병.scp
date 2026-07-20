@@ -55,6 +55,7 @@ GetItem()
 {
 	SendMessage("락스병", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "용제");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text12");
 	SendMessage("타이머", "스크립트설정", "1 0 1 i_락스병.Release");
 }
 
