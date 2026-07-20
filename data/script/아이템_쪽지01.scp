@@ -21,14 +21,14 @@ Init()
 Init쪽지01()
 {
 	Init();
-	SetObjValue("ObjName", "쪽지1");
+	SetObjValue("ObjName", "쪽지01");
 	SetObjName(GetObjValue("ObjName"));
 }
 
 Init쪽지02()
 {
 	Init();
-	SetObjValue("ObjName", "쪽지2");
+	SetObjValue("ObjName", "쪽지02");
 	SetObjName(GetObjValue("ObjName"));
 }
 
@@ -42,7 +42,7 @@ Init쪽지03()		// 금고 설명
 Init쪽지04()
 {
 	Init();
-	SetObjValue("ObjName", "쪽지3");
+	SetObjValue("ObjName", "쪽지04");
 	SetObjName(GetObjValue("ObjName"));
 }
 
