@@ -125,4 +125,5 @@ StartGame()
 	SendMessage("허드", "켜기", "허드");
 
 //	LoadObject("WObjParticle", "*pos -1200 117 -694 *filename data/misc/fire.bmp *type elespk *size 10 -10 10 -10 *dir -1 0 0", "");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _main2.LoadObject");
 }

@@ -1,0 +1,93 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  S c r i p t F i l e 
+//
+//  (C) Sonnori 2000						_main2.scp
+//
+//	熱血man: akekakek		last update: 2000.08.21
+//  --------------------------------------------------
+	
+ScriptMain()
+{
+	SendMessage("타이머", "켜기", "");
+
+	LoadObject("WObjWallPaper", "Logo.Loading", "*image data/misc/wallpaper/로딩.jpg");
+	LoadObject("WObjWallPaper", "Logo.FadeOut", "*image data/misc/wallpaper/페이드아웃.jpg");
+
+	SendMessage("Logo.Loading", "켜기", "");
+	SendMessage("Logo.Loading", "값지정", "알파 1");
+	SendMessage("타이머", "스크립트설정", "3 0 1 _main2.Loading");
+}
+
+Loading()
+{
+	LoadObject("WObjSchool", "배경", "*map data/map/main2.bsp");
+	LoadWed($DataFolder + $StageName2 + ".wed");
+
+	SendMessage("Logo.FadeOut", "값지정", "알파 0");
+	SendMessage("Logo.FadeOut", "켜기", "");
+	SendMessage("Logo.FadeOut", "값지정", "델타 4");
+	SendMessage("Logo.Loading", "값지정", "델타 -4");
+	SendMessage("타이머", "스크립트설정", "10 0 1 _main2.Event01");
+}
+
+Event01()
+{
+	LoadObject("WObjPlayer", "유저", "*clickScript 오브젝트_유저.Process");
+	SendMessage("자막", "활성화", "");
+	SendMessage("자막", "와이드모드", "켜기");
+	DeleteObject("Logo.Loading");
+
+	SendMessage("사운드", "연주", "loop,data/sound/bgm/본관1_바람소리.wav");
+	SendMessage("사운드", "연주", "data/sound/event/강금이벤트.wav");
+	SendMessage("타이머", "스크립트설정", "5 0 1 _main2.Event02");
+}
+
+Event02()
+{
+	SendMessage("main", "게임시작", "시작");
+	SendMessage("타이머", "스크립트설정", "5 0 1 _main2.Event03");
+}
+
+Event03()
+{
+	SendMessage("유저", "위치", "-1100.0 -10.0 2020.0");
+	SendMessage("유저", "회전", "0");
+	SendMessage("유저", "캡춰", "카메라 머리");
+	SendMessage("유저", "획득", "가방");
+	SendMessage("유저", "획득", "핸드폰");
+
+	SendMessage("Logo.FadeOut", "값지정", "델타 -3");
+	SendMessage("타이머", "스크립트설정", "3 0 1 _main2.Event04");
+}
+
+Event04()
+{
+	DeleteObject("Logo.FadeOut");
+	SendMessage("타이머", "스크립트설정", "5 0 1 _main2.Event05");
+}
+
+Event05()
+{
+	SendMessage("자막", "와이드모드", "끄기");
+	SendMessage("타이머", "스크립트설정", "0.5 0 1 _main2.StartGame");
+}
+
+StartGame()
+{
+	SendMessage("자막", "비활성", "");
+
+	SendMessage("허드", "켜기", "허드");
+	LoadObject("WObjLumStick", "다이나믹라이트", "");
+	SendMessage("유저", "캡춰", "다이나믹라이트 손");
+	SendMessage("다이나믹라이트", "끄기", "");
+}
+
+LoadObject()
+{
+	LoadObject("WObjEventArea", "나무쳐다보기", " *area -1790.59 110.0 1269.93 -1725.96 200.01 1335.05 *script e_나무윗쪽.Event쳐다보기");
+	LoadObject("WObjEventArea", "나무교실이벤트", " *area -1833.77 90.77 1246.55 -1794.84 200.01 1324.58 *script 대화#3-1.Init");
+}
