@@ -1,0 +1,153 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//					O b j e c t S c r i p t F i l e 
+//
+//  (C) Sonnori 2000				문_방화셔터.scp
+//
+//	熱血man: matzzang		last update: 2000.07.22
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "handleA " + $WorkingFile + ".type1");
+	SendMessage("", "스크립트설정", "handleB " + $WorkingFile + ".type2");
+	SendMessage("", "스크립트설정", "dummy " + "null");
+	
+	SetObjValue("MotionName", "");
+	SetObjValue("OpenFlag", 0);
+	SetObjValue("Lock", "$문_이유없이열린문");
+}
+
+Init1층방화셔터()
+{
+	Init();
+	SetObjName("1층방화셔터");
+	SetObjValue("Lock", "$문_1층방화셔터");
+	SetObjValue("KeyName", "방화셔터열쇠");
+}
+
+Init1층서무실옆방화셔터()
+{
+	Init();
+	SetObjName("1층서무실옆방화셔터");
+	SetObjValue("Lock", "$문_1층서무실옆방화셔터");
+}
+
+type1.pick()
+{
+	return (GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK) ? "i방화셔터열쇠" : "잡기";
+}
+
+type1.click()
+{
+	$OpenFlag	= GetObjValue("OpenFlag");
+	$LockValue  = GetValue(GetObjValue("Lock"));
+	
+	if(GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK)
+	{
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text19");
+		SetValue(GetObjValue("Lock"), UNLOCK);
+		SendMessage("사운드", "연주", "잠긴소리01,data/sound/열쇠로나무문열기.wav");
+		return;
+	}
+
+	if($LockValue == UNLOCK)
+	{
+		switch($OpenFlag)
+		{
+			case 0:
+			{
+				SendMessage("", "애니메이션", "열기1");
+				if(GetObjValue("MotionName") == "열기1")
+				{
+					SetObjValue("OpenFlag", $OpenFlag = 1);
+				}
+				return;
+			}
+			case 1:
+			{
+				SendMessage("", "애니메이션", "닫기1");
+				if(GetObjValue("MotionName") == "닫기1")
+				{
+					SetObjValue("OpenFlag", $OpenFlag = 0);
+				}
+				return;
+			}
+			case 2:
+			{
+				SendMessage("", "애니메이션", "닫기2");
+				if(GetObjValue("MotionName") == "닫기2")
+				{
+					SetObjValue("OpenFlag", $OpenFlag = 0);
+				}
+				return;
+			}
+		}
+	}
+	
+	SendMessage("사운드", "연주", "잠긴소리01,data/sound/돌리는문잠긴것.wav");
+//	SendMessage("자막", "문자출력", "2,Locked");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text20");
+}
+
+type2.pick()
+{
+	return (GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK) ? "i방화셔터열쇠" : "잡기";
+}
+
+type2.click()
+{
+	$OpenFlag	= GetObjValue("OpenFlag");
+	$LockValue  = GetValue(GetObjValue("Lock"));
+	
+	if(GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK)
+	{
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text19");
+		SetValue(GetObjValue("Lock"), UNLOCK);
+		SendMessage("사운드", "연주", "잠긴소리01,data/sound/열쇠로나무문열기.wav");
+		return;
+	}
+
+	if($LockValue == UNLOCK)
+	{
+		switch($OpenFlag)
+		{
+			case 0:
+			{
+				SendMessage("", "애니메이션", "열기2");
+				if(GetObjValue("MotionName") == "열기2")
+				{
+					SetObjValue("OpenFlag", $OpenFlag = 2);
+				}
+				return;
+			}
+			case 1:
+			{
+				SendMessage("", "애니메이션", "닫기1");
+				if(GetObjValue("MotionName") == "닫기1")
+				{
+					SetObjValue("OpenFlag", $OpenFlag = 0);
+				}
+				return;
+			}
+			case 2:
+			{
+				SendMessage("", "애니메이션", "닫기2");
+				if(GetObjValue("MotionName") == "닫기2")
+				{
+					SetObjValue("OpenFlag", $OpenFlag = 0);
+				}
+				return;
+			}
+		}
+	}
+
+	SendMessage("사운드", "연주", "잠긴소리01,data/sound/돌리는문잠긴것.wav");
+//	SendMessage("자막", "문자출력", "2,Locked");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text20");
+}
