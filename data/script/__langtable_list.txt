@@ -57,7 +57,7 @@ __langtable_list.txt (custom)
 문_화장실.scp
 문_화장실실내01.scp
 문_화장실실내02.scp	20
-아이템_가사실열쇠.scp
+아이템_가사실열쇠.scp	38, 39
 아이템_나침판.scp
 아이템_니뻐.scp
 아이템_목의문장.scp
