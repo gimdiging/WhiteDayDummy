@@ -1,0 +1,45 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//					O b j e c t S c r i p t F i l e 
+//
+//  (C) Sonnori 2000				문_손잡이02.scp
+//
+//	熱血man: matzzang		last update: 2000.07.17
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "handle " + $WorkingFile);
+}
+
+pick()
+{
+	return "잡기";
+}
+
+click()
+{
+	switch(Random() % 2)
+	{
+		case 0:
+		{
+//			$Info = "It's locked";
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text20");
+			break;
+		}
+		case 1:
+		{
+//			$Info = "You can't open it";
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text07");
+			break;
+		}
+	}
+
+//	SendMessage("자막", "문자출력", "2," + $Info);
+	SendMessage("사운드", "연주", "당기는문잠긴것,data/sound/당기는문잠긴것.wav");
+}
