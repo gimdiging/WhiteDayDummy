@@ -13,6 +13,7 @@ e캐릭터_때리는놈.scp
 e캐릭터_맞는놈.scp
 flowchart.txt
 i_락스병.scp		11, 12
+i_목걸이.scp		54, 55
 i_열쇠3.scp		13, 14
 i_열쇠4.scp		15, 16, 17
 o_고양이출몰장.scp		18

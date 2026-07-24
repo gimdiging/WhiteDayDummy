@@ -276,3 +276,13 @@ Text53()
 {
 	SendMessage("자막", "문자출력", "2," + GetObjValue("ObjName") + " 얻었다.");
 }
+
+Text54()
+{
+	SendMessage("자막", "문자출력", "2,목걸이가 떨어져 있다.");
+}
+
+Text55()
+{
+	SendMessage("자막", "문자출력", "2,소영이의목걸이를 얻었다.");
+}

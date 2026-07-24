@@ -90,4 +90,6 @@ LoadObject()
 {
 	LoadObject("WObjEventArea", "나무쳐다보기", " *area -1790.59 110.0 1269.93 -1725.96 200.01 1335.05 *script e_나무윗쪽.Event쳐다보기");
 	LoadObject("WObjEventArea", "나무교실이벤트", " *area -1833.77 90.77 1246.55 -1794.84 200.01 1324.58 *script 대화#3-1.Init");
+
+	LoadObject("WObjStaticBody", "", "*pos -1085.57 104.23 1974.16 *rot 180.0 46.0 0.0 *pet data/puppet/item/아이템_쪽지01.pet *scale 0.5 *script i_목걸이.Init커서용");
 }
