@@ -56,7 +56,8 @@ click()
 	$Step = GetObjValue("Step");
 	if($Step == 0)
 	{
-		SendMessage("자막", "문자출력", "2,It's a luminous stick");
+//		SendMessage("자막", "문자출력", "2,It's a luminous stick");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text48");
 	}
 	else if($Step == 1)
 	{
@@ -69,7 +70,8 @@ click()
 GetItem()
 {
 	SendMessage("야광스틱", "페이드", "Recursive 1 1 0");
-	SendMessage("유저", "획득", "Luminous Stick");
+	SendMessage("유저", "획득", "야광스틱");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text49");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_야광봉.Release");
 }
 

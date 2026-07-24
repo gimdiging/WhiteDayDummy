@@ -1,0 +1,59 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//						I t e m S c r i p t F i l e 
+//
+//  (C) Sonnori 2000			아이템_접은지도.scp
+//
+//	熱血man: matzzang		last update: 2000.07.22
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "item " + $WorkingFile);
+	SetObjValue("Step", 0);
+	SetObjName("접은지도");
+}
+
+pick()
+{
+	return GetObjValue("Step") == 0 ? "보기" : "잡기";
+}
+
+click()
+{
+	$Step = GetObjValue("Step");
+	
+	switch($Step)
+	{
+		case 0:
+		{
+//			SendMessage("자막", "문자출력", "2," + (Random() % 2 ? "There is a piece of paper on the floor" : "It looks like a technical drawing"));
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text50");
+			break;
+		}
+		case 1:
+		{
+			SendMessage("타이머", "스크립트설정", "0 0 1 아이템_접은지도.GetItem");
+			break;
+		}
+	}
+	SetObjValue("Step", $Step + 1);
+}
+
+GetItem()
+{
+	SendMessage("접은지도", "페이드", "Recursive 1 1 0");
+	SendMessage("유저", "획득", "신관 기물 망실 보고서");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text51");
+	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_접은지도.Release");
+}
+
+Release()
+{
+	DeleteObject("접은지도");
+}

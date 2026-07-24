@@ -30,7 +30,8 @@ click()
 	$Step = GetObjValue("Step");
 	if($Step == 0)
 	{
-		SendMessage("자막", "문자출력", "2,나침반이다");
+//		SendMessage("자막", "문자출력", "2,나침반이다");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text40");
 	}
 	else if($Step == 1)
 	{
@@ -43,6 +44,7 @@ GetItem()
 {
 	SendMessage("나침판", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "나침반");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text41");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_나침판.Release");
 }
 

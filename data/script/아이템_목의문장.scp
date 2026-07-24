@@ -1,0 +1,64 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//						I t e m S c r i p t F i l e 
+//
+//  (C) Sonnori 2000			아이템_목의문장.scp
+//
+//	熱血man: matzzang		last update: 2000.07.22
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "item " + $WorkingFile);
+	SetObjName("목의조각");
+	SetObjValue("Step", 0);
+}
+
+pick()
+{
+	$Step = GetObjValue("Step");
+	
+	if($Step == 0)
+	{
+		return "보기";
+	}
+	else if($Step == 1)
+	{
+		return "잡기";
+	}
+	return "";
+}
+
+click()
+{
+	$Step = GetObjValue("Step");
+	
+	if($Step == 0)
+	{
+//		SendMessage("자막", "문자출력", "3,It's a weird-looking piece of \nthe wooden emblem");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text44");
+	}
+	else if($Step == 1)
+	{
+		SendMessage("타이머", "스크립트설정", "0 0 1 아이템_목의문장.GetItem");
+	}
+	SetObjValue("Step", $Step + 1);
+}
+
+GetItem()
+{
+	SendMessage("목의조각", "페이드", "Recursive 1 1 0");
+	SendMessage("유저", "획득", "목의조각");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text45");
+	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_목의문장.Release");
+}
+
+Release()
+{
+	DeleteObject("목의조각");
+}
