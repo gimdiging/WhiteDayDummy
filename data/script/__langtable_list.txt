@@ -3,6 +3,7 @@ e_그림자.scp
 e_나무아랫쪽.scp		01, 02
 e_나무윗쪽.scp
 e_나무윗쪽줄기.scp
+e_나무줄기.scp (custom)
 e_도난방지기.scp		03, 04
 e_배전판.scp		05
 e_전자금고.scp		06, 07
