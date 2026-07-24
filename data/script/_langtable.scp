@@ -266,3 +266,13 @@ Text51()
 {
 	SendMessage("자막", "문자출력", "2,신관 기물 망실 보고서를 얻었다.");
 }
+
+Text52()
+{
+	SendMessage("자막", "문자출력", "2,누군가 메모를 남겼다.");
+}
+
+Text53()
+{
+	SendMessage("자막", "문자출력", "2," + GetObjValue("ObjName") + " 얻었다.");
+}
