@@ -47,8 +47,8 @@ __langtable_list.txt (custom)
 문_방송실.scp (custom)
 문_방화셔터.scp		21, 22
 문_서무실.scp
-문_손잡이01.scp		22, 09
-문_손잡이02.scp		22, 09
+문_손잡이01.scp		22, 07
+문_손잡이02.scp		22, 07
 문_양호실.scp
 문_조정실.scp (custom)
 문_중앙통로01.scp		22
