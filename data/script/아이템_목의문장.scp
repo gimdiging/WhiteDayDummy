@@ -41,7 +41,7 @@ click()
 	if($Step == 0)
 	{
 //		SendMessage("자막", "문자출력", "3,It's a weird-looking piece of \nthe wooden emblem");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text44");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text46");
 	}
 	else if($Step == 1)
 	{
@@ -54,7 +54,7 @@ GetItem()
 {
 	SendMessage("목의조각", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "목의조각");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text45");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text47");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_목의문장.Release");
 }
 

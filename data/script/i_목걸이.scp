@@ -48,7 +48,7 @@ click()
 	
 	if($Step == 0)
 	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text54");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text13");
 	}
 	else if($Step == 1)
 	{
@@ -62,7 +62,7 @@ GetItem()
 	SendMessage("소영이의목걸이", "발광", "Recursive off");
 	SendMessage("소영이의목걸이", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "소영이의목걸이");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text55");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text14");
 	SendMessage("타이머", "스크립트설정", "1 0 1 i_목걸이.Release");
 }
 

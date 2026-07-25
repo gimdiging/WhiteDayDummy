@@ -33,7 +33,7 @@ click()
 		case 0:
 		{
 //			SendMessage("자막", "문자출력", "3,There's a pair of nippers on the table");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text42");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text44");
 			break;
 		}
 		case 1:
@@ -50,7 +50,7 @@ GetItem()
 {
 	SendMessage("니퍼", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "니퍼");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text43");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text45");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_니뻐.Release");
 }
 

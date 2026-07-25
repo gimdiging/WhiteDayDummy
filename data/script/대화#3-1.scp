@@ -50,13 +50,13 @@ Talking()
 		case 3:
 		{
 //			SendMessage("자막", "문자출력", "2,한소영이 보인다");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text34");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text36");
 			break;
 		}	
 		case 4:
 		{
 //			SendMessage("자막", "선택", "내가 도와 줄께!\n너 거기서 뭐해?");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text35");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text37");
 			break;
 		}
 		case 5:
