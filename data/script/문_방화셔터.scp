@@ -40,7 +40,7 @@ Init1√˛º≠π´Ω«ø∑πÊ»≠º≈≈Õ()
 
 type1.pick()
 {
-	return (GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK) ? "iπÊ»≠º≈≈Õø≠ºË" : "¿‚±‚";
+	return (GetValue(GetObjValue("Lock")) == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName")) ? "iπÊ»≠º≈≈Õø≠ºË" : "¿‚±‚";
 }
 
 type1.click()
@@ -97,7 +97,7 @@ type1.click()
 
 type2.pick()
 {
-	return (GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK) ? "iπÊ»≠º≈≈Õø≠ºË" : "¿‚±‚";
+	return (GetValue(GetObjValue("Lock")) == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName")) ? "iπÊ»≠º≈≈Õø≠ºË" : "¿‚±‚";
 }
 
 type2.click()
