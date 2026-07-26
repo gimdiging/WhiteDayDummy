@@ -284,5 +284,15 @@ Text54()
 
 Text55()
 {
-	SendMessage("자막", "문자출력", "2," + GetObjValue("ObjName") + " 얻었다.");
+	SendMessage("자막", "문자출력", "2,쪽지를 얻었다.");
+}
+
+Text56()
+{
+	SendMessage("자막", "문자출력", "2,이상하게 생긴 \n흙 부적이다.");
+}
+
+Text57()
+{
+	SendMessage("자막", "문자출력", "2,토의조각을 얻었다.");
 }

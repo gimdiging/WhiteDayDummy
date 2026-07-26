@@ -1,0 +1,73 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//						I t e m S c r i p t F i l e 
+//
+//  (C) Sonnori 2000			아이템_토의문장.scp
+//
+//	熱血man: matzzang		last update: 2000.07.22
+//  --------------------------------------------------
+
+Init()
+{
+	SetObjName("토의조각");
+	SendMessage("", "발광", "Recursive on");
+	SendMessage("", "발광색", "Recursive 104 96 23");
+}
+
+Init커서용()
+{
+	SendMessage("", "스크립트설정", "item " + $WorkingFile);
+	SetObjName("토의조각커서용");
+	SetObjValue("Step", 0);
+	SendMessage("", "페이드", "Recursive 0 0 0");
+}
+
+pick()
+{
+	$Step = GetObjValue("Step");
+	
+	if($Step == 0)
+	{
+		return "보기";
+	}
+	else if($Step == 1)
+	{
+		return "잡기";
+	}
+	return "";
+}
+
+click()
+{
+	$Step = GetObjValue("Step");
+	
+	if($Step == 0)
+	{
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text56");
+	}
+	else if($Step == 1)
+	{
+		SendMessage("타이머", "스크립트설정", "0 0 1 아이템_토의문장.GetItem");
+	}
+	SetObjValue("Step", $Step + 1);
+}
+
+GetItem()
+{
+	SendMessage("토의조각", "발광", "Recursive off");
+	SendMessage("토의조각", "페이드", "Recursive 1 1 0");
+	SendMessage("유저", "획득", "토의조각");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text57");
+	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_토의문장.Release");
+}
+
+Release()
+{
+	DeleteObject("토의조각");
+	DeleteObject("토의조각커서용");
+}
