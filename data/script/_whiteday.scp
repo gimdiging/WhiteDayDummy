@@ -1,0 +1,142 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  S c r i p t F i l e 
+//
+//  (C) Sonnori 2000					_WhiteDay.scp
+//
+//	熱血man: matzzang		last update: 2000.07.17
+//  --------------------------------------------------
+
+// Global Value
+	$GameStatus			= "Logo.Wizard";
+	$GameStep			= 1;						// Logo.Wizard
+	$DemoMode			= 0;						// RealTimeScene
+	$GameOver			= FALSE;
+	
+	$DataFolder 		= "data/";
+	$ScriptFolder		= $DataFolder + "script/";
+	$MapFolder 			= $DataFolder + "map/";
+	$PuppetFolder 		= $DataFolder + "puppet/";
+	$SoundFolder 		= $DataFolder + "sound/";
+
+	$ScriptType			= ".scp";
+	$ScriptFileName0	= "menu";
+	$ScriptFileName1	= "main1";
+	$ScriptFileName2	= "main2";
+	
+	$KeySetupPuppet		= "data/puppet/char/캐릭터_희민.pet";
+	$KeySetupPuppet1	= "data/puppet/char/캐릭터_희민1.pet";
+	
+	$USER_TYPE			= "";
+	$USER_CAPTUREITEM	= FALSE;
+	$USER_RISE			= FALSE;
+	
+	$LUM_STICK			= 0;
+
+	$StageName1 		= "main1";
+	$StageName2 		= "main2";
+
+		$Mission1				= OFF;
+		$Mission1_수위이벤트	= 0;
+		$Mission1_철망			= OFF;
+		
+		$Mission2				= OFF;
+		$Mission2_공이벤트		= OFF;
+		$Mission2_축구공		= 0;
+		$Mission2_축구공max		= 1;
+		$Mission2_배구공		= 0;
+		$Mission2_배구공max		= 6;
+		$Mission2_야구공		= 0;
+		$Mission2_야구공max		= 9;
+		$Mission2_농구공		= 0;
+		$Mission2_농구공max		= 5;
+		
+		$Mission3				= OFF;
+		$Mission3_복사기전원	= OFF;
+		
+		$Mission4_나무			= OFF;
+		
+	$문_교실2_1앞 			= LOCK; 
+	$문_교실2_1뒤 			= LOCK; 
+	$문_교실2_2앞 			= LOCK; 
+	$문_교실2_2뒤 			= LOCK; 
+	$문_교실2_3앞 			= LOCK; 
+	$문_교실2_3뒤 			= LOCK; 
+	$문_교실2_4앞 			= LOCK; 
+	$문_교실2_4뒤 			= LOCK; 
+	$문_교실2_5앞 			= LOCK; 
+	$문_교실2_5뒤 			= LOCK; 
+	$문_교실2_6앞 			= LOCK; 
+	$문_교실2_6뒤 			= LOCK; 
+	$문_교실2_7앞 			= LOCK; 
+	$문_교실2_7뒤 			= LOCK; 
+	$문_교실2_8앞 			= LOCK; 
+	$문_교실2_8뒤 			= LOCK; 
+	$문_교실2_9앞 			= LOCK; 
+	$문_교실2_9뒤 			= LOCK; 
+	$문_교실2_10앞 			= LOCK; 
+	$문_교실2_10뒤 			= LOCK; 
+	$문_교실2_11앞 			= LOCK; 
+	$문_교실2_11뒤 			= LOCK; 
+	$문_교실2_12앞 			= LOCK; 
+	$문_교실2_12뒤 			= LOCK; 
+	$문_기계실습실앞		= LOCK;
+	$문_기계실습실뒤		= LOCK;
+	$문_가정실습실앞		= UNLOCK;
+	$문_가정실습실뒤		= UNLOCK;
+	$문_산악동아리			= LOCK;
+	$문_사진동아리			= LOCK;
+	$문_체육창고앞			= LOCK;
+	$문_체육창고뒤			= LOCK;
+	
+	$문_이유없이열린문		= UNLOCK;
+	$문_중앙통로			= LOCK;
+	$문_1층방화셔터			= LOCK;
+	$문_1층서무실옆방화셔터	= LOCK;
+	///////////////////////////////////////////////////////////
+	// akekakek code
+
+	$문_상담실 = UNLOCK;
+	$문_교무실A = UNLOCK;
+	$문_교무실B = UNLOCK;
+	$문_양호실 = UNLOCK;
+
+	$문_숙직실 = UNLOCK;
+
+
+	$문_교장실 = UNLOCK;
+
+	// akekakek end
+	///////////////////////////////////////////////////////////
+
+	$TalkingStep			= 0;
+	$대화_성아				= "";
+	$대화_지현				= 0;
+	
+	$아이템_야광스틱_충전중	= FALSE;
+
+	$문_본관2연결문 = LOCK;
+
+ScriptMain()
+{	
+	LoadObject("WObjConsole", "콘솔", "");
+	LoadObject("WObjCamera", "카메라", "");
+	LoadObject("WObjSoundManager", "사운드", "");
+	LoadObject("WObjScriptTimer", "타이머", "");
+	LoadObject("WTune", "오디오", "");
+	LoadObject("WObjCaption", "자막", "*font data/misc/AA견고딕18.wft");
+
+	for($i = 0; $i <= 2; $i++)
+	{
+		AddScriptFileList($ScriptFolder + "_" + GetValue("$ScriptFileName" + $i) + $ScriptType);
+	}
+
+	{
+		ChangeScript($ScriptFileName0);		// menu
+	//	ChangeScript($ScriptFileName1);		// main1
+	//	ChangeScript($ScriptFileName2);		// main2
+	}
+}
