@@ -48,7 +48,7 @@ type1.click()
 	$OpenFlag	= GetObjValue("OpenFlag");
 	$LockValue  = GetValue(GetObjValue("Lock"));
 	
-	if(GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK)
+	if($LockValue == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName"))
 	{
 		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 		SetValue(GetObjValue("Lock"), UNLOCK);
@@ -105,7 +105,7 @@ type2.click()
 	$OpenFlag	= GetObjValue("OpenFlag");
 	$LockValue  = GetValue(GetObjValue("Lock"));
 	
-	if(GetObjValue("UserItem") == GetObjValue("KeyName") && GetValue(GetObjValue("Lock")) == LOCK)
+	if($LockValue == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName"))
 	{
 		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 		SetValue(GetObjValue("Lock"), UNLOCK);
