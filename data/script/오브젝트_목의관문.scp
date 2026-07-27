@@ -16,7 +16,7 @@ Init()
 {
 	SendMessage("", "스크립트설정", "use " + $WorkingFile);
 	SetObjValue("Step", 0);
-	SetObjValue("KeyName", "Piece of the 'Tree' Emblem");
+	SetObjValue("KeyName", "목의조각");
 	SetObjValue("Lock", "$문_1층서무실옆방화셔터");
 }
 
@@ -52,11 +52,13 @@ click()
 		{
 			if($LUM_STICK <= 128.0)
 			{
-				SendMessage("자막", "문자출력", "2,무언가 희미하게 보인다");
+//				SendMessage("자막", "문자출력", "2,무언가 희미하게 보인다");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text75");
 			}
 			else
 			{
-				SendMessage("자막", "문자출력", "2,나무 '목'자가 음각되어 있다");
+//				SendMessage("자막", "문자출력", "2,나무 '목'자가 음각되어 있다");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text76");
 			}
 			SetObjValue("Step", $Step + 1);
 		}
@@ -66,18 +68,20 @@ click()
 			{
 				if($LUM_STICK <= 128.0)
 				{
-					SendMessage("자막", "문자출력", "2,너무 어둡다");
+//					SendMessage("자막", "문자출력", "2,너무 어둡다");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text77");
 				}
 				else
 				{
 					SetValue(GetObjValue("Lock"), UNLOCK);
 					SendMessage("", "페이드", "Recursive 1 1 0");
-					SendMessage("유저", "폐기", "Piece of the 'Tree' Emblem");
+					SendMessage("유저", "폐기", "목의조각");
 				}
 			}
 			else
 			{
-				SendMessage("자막", "문자출력", "2,아무런 반응도 일어나지 않는다");
+//				SendMessage("자막", "문자출력", "2,아무런 반응도 일어나지 않는다");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text78");
 			}
 		}
 	}
