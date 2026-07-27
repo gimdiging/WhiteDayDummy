@@ -19,22 +19,20 @@ Init()
 	SendMessage("", "스크립트설정", "dummy " + "null");
 	
 	SetObjValue("OpenFlag", CLOSE);
-	SetObjValue("LockFlag", LOCK);
-	SetObjValue("Lock", "");
+//	SetObjValue("LockFlag", LOCK);
+	SetObjValue("Lock", "$문_이유없이잠긴문");
 	SetObjValue("MotionName", "");
 }
 
 Init본관2연결문1()
 {
 	Init();
-	SetObjValue("LockFlag", UNLOCK);
 	SetObjValue("Lock", "$문_본관2연결문");
 }
 
 Init본관2연결문2()
 {
 	Init();
-	SetObjValue("LockFlag", UNLOCK);
 	SetObjValue("Lock", "$문_본관2연결문");
 }
 
@@ -46,10 +44,9 @@ type1.pick()
 type1.click()
 {
 	$OpenFlag = GetObjValue("OpenFlag");
-	$LockFlag = GetObjValue("LockFlag");
 	$LockValue = GetValue(GetObjValue("Lock"));
 	
-	if($LockFlag == LOCK || $LockValue == LOCK)
+	if($LockValue == LOCK)
 	{
 		SendMessage("사운드", "연주", "중앙통로문잠긴소리,data\sound\돌리는문잠긴것.wav");
 //		SendMessage("자막", "문자출력", "2,It's locked");
@@ -98,10 +95,9 @@ type2.pick()
 type2.click()
 {
 	$OpenFlag = GetObjValue("OpenFlag");
-	$LockFlag = GetObjValue("LockFlag");
 	$LockValue = GetValue(GetObjValue("Lock"));
 	
-	if($LockFlag == LOCK || $LockValue == LOCK)
+	if($LockValue == LOCK)
 	{
 		SendMessage("사운드", "연주", "중앙통로문잠긴소리,data\sound\돌리는문잠긴것.wav");
 //		SendMessage("자막", "문자출력", "2,It's locked");
