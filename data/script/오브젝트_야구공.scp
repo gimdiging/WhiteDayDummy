@@ -1,0 +1,69 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//					O b j e c t S c r i p t F i l e 
+//
+//  (C) Sonnori 2000			오브젝트_야구공.scp
+//
+//	熱血man: matzzang		last update: 2000.07.24
+//  --------------------------------------------------
+
+Init()
+{
+	SendMessage("", "스크립트설정", "ball " + $WorkingFile);
+	SetObjValue("FindEvent", FALSE);
+}
+
+pick()
+{
+	return "보기";
+}
+
+click()
+{
+	if($Mission2_공이벤트 == TRUE)
+	{
+		if(GetObjValue("FindEvent") == FALSE)
+		{
+			$Mission2_야구공++;
+//			SendMessage("자막", "문자출력", "3," + $Mission2_야구공 + "번째 야구공이다");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text88");
+			SendMessage("사운드", "연주", "data/sound/아이템획득.wav");
+			
+			SetObjValue("FindEvent", TRUE);
+		}
+		else
+		{
+			switch(Random() % 3)
+			{
+				case 0:
+				{
+//					SendMessage("자막", "문자출력", "2,아까 찾은 공인것 같다");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text71");
+					break;
+				}
+				case 1:
+				{
+//					SendMessage("자막", "문자출력", "2,또 그공이다... 지겹군...");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text72");
+					break;
+				}
+				case 2:
+				{
+//					SendMessage("자막", "문자출력", "2,이미 보았던 공이다");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text73");
+					break;
+				}
+			}
+		}
+	}
+	else
+	{
+//		SendMessage("자막", "문자출력", "2,야구공이다");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text89");
+	}	
+}

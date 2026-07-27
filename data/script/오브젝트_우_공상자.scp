@@ -1,0 +1,42 @@
+//   _____      _____
+//   |   ||__  /   //
+//   |   |/  |/   //
+//   |           //
+//   |    /|    //
+//   |___//|___//  h i t e D a y  
+//				
+//						I t e m S c r i p t F i l e 
+//
+//  (C) Sonnori 2000			오브젝트_우_공상자.scp
+//
+//	熱血man: akekakek		last update: 2000.07.23
+//  --------------------------------------------------
+
+
+Init()
+{
+	SendMessage("", "스크립트설정", "info " + $WorkingFile);
+}
+
+Init야구공()
+{
+	Init();
+	SetObjValue("InfoText", "야구공이 3개 있다");
+}
+
+Init축구공()
+{
+	Init();
+	SetObjValue("InfoText", "축구공이 1개 있다");
+}
+
+pick()
+{
+	return "보기";
+}
+	
+click()
+{
+//	SendMessage("자막", "문자출력", "3," + GetObjValue("InfoText"));
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text90");
+}
