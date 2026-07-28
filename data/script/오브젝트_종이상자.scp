@@ -32,7 +32,7 @@ click()
 	if(GetObjValue("OpenFlag") == 0)
 	{
 //		SendMessage("자막", "문자출력", "2,It's a paper box. It's empty");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text92");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text93");
 		SetObjValue("OpenFlag", 1);
 	}
 	else
