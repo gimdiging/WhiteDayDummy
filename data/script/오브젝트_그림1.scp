@@ -25,5 +25,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3,[꽃병] 1학년 7반 홍수향\\음, 넘치는 단순미다");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text60");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text59");
 }

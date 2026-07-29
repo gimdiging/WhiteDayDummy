@@ -33,13 +33,13 @@ click()
 		case 0:
 		{
 //			SendMessage("자막", "문자출력", "3,A toolbox is placed on the floor. \nMaybe someone was fixing the light");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text58");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text57");
 			break;
 		}
 		default:
 		{
 //			SendMessage("자막", "문자출력", "2,You see nothing useful");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text59");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text58");
 			return;
 		}
 	}

@@ -48,12 +48,12 @@ button.click()
 	if($Mission3_복사기전원 == OFF)	
 	{
 //		SendMessage("자막", "문자출력", "3,전원이 공급되지 않고 있다. 전원 플러그가 빠져 있나 보다");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text84");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text83");
 	}
 	else if(GetObjValue("Step") != 2)
 	{
 //		SendMessage("자막", "문자출력", "3,먼저 복사기 덮개을 열어야 한다");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text85");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text84");
 	}
 	else
 	{
@@ -86,7 +86,7 @@ click()
 	if($Step == 0)
 	{
 //		SendMessage("자막", "문자출력", "2,복사기이다");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text86");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text85");
 		SetObjValue("Step", $Step + 1);
 	}
 	else if($Step == 1)

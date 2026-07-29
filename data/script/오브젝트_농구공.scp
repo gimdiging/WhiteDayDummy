@@ -31,7 +31,7 @@ click()
 		{
 			$Mission2_농구공++;
 //			SendMessage("자막", "문자출력", "3," + $Mission2_농구공 + "번째 농구공이다");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text70");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text69");
 			SendMessage("사운드", "연주", "data/sound/아이템획득.wav");
 			
 			SetObjValue("FindEvent", TRUE);
@@ -43,19 +43,19 @@ click()
 				case 0:
 				{
 //					SendMessage("자막", "문자출력", "2,아까 찾은 공인것 같다");
-					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text71");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text70");
 					break;
 				}
 				case 1:
 				{
 //					SendMessage("자막", "문자출력", "2,또 그공이다... 지겹군...");
-					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text72");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text71");
 					break;
 				}
 				case 2:
 				{
 //					SendMessage("자막", "문자출력", "2,이미 보았던 공이다");
-					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text73");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text72");
 					break;
 				}
 			}
@@ -64,6 +64,6 @@ click()
 	else
 	{
 //		SendMessage("자막", "문자출력", "2,농구공이다");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text74");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text73");
 	}	
 }

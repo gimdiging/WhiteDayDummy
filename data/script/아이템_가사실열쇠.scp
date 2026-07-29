@@ -41,7 +41,7 @@ click()
 	if($Step == 0)
 	{
 //		SendMessage("자막", "문자출력", "2,There is a key inside the safe");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text40");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text39");
 	}
 	else if($Step == 1)
 	{
@@ -54,7 +54,7 @@ GetItem()
 {
 	SendMessage("가정실습실열쇠", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "가정실습실열쇠");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text41");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text40");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_가사실열쇠.Release");
 }
 

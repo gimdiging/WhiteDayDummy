@@ -25,5 +25,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3,[하늘] 3학년 8반 SF베트맨\\우리학교 선배 중에 배트맨이 있을 줄이야");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text64");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text63");
 }

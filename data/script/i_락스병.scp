@@ -41,7 +41,7 @@ click()
 	if($Step == 0)
 	{
 //		SendMessage("자막", "문자출력", "2,용제가 있다");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text11");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text10");
 		SetObjValue("Step", $Step + 1);
 	}
 	else if($Step == 1)
@@ -55,7 +55,7 @@ GetItem()
 {
 	SendMessage("락스병", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "용제");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text12");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text11");
 	SendMessage("타이머", "스크립트설정", "1 0 1 i_락스병.Release");
 }
 

@@ -41,11 +41,11 @@ click()
 //	SendMessage("자막", "문자출력", "2," + $Info);
 	if($Info == "It's locked")
 	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 	}
 	else if($Info == "You can't open it")
 	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text07");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text06");
 	}
 	SendMessage("사운드", "연주", "당기는문잠긴것,data/sound/당기는문잠긴것.wav");
 }

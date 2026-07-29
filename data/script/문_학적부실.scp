@@ -38,7 +38,7 @@ type1.click()
 	if($LockFlag == LOCK)
 	{
 		SendMessage("사운드", "연주", "중앙통로문잠긴소리,data\sound\돌리는문잠긴것.wav");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 	}
 	else
 	{
@@ -88,7 +88,7 @@ type2.click()
 	if($LockFlag == LOCK)
 	{
 		SendMessage("사운드", "연주", "중앙통로문잠긴소리,data\sound\돌리는문잠긴것.wav");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 	}
 	else
 	{

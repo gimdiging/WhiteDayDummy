@@ -81,14 +81,14 @@ click()
 		if($USER_RISE == FALSE)
 		{
 //			SendMessage("자막", "문자출력", "3,You can see a wire-screen of the air duct. \nBut it's too high to reach");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text96");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text95");
 		}
 		else
 		{
 			if($Step == 0)
 			{
 //				SendMessage("자막", "문자출력", "3,It's a wire-screen of the air duct. It is fixed \ntightly. You can open it with a suitable tool");
-				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text97");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text96");
 				SetObjValue("step", 1);
 			}
 			else if($Step != 2)
@@ -96,7 +96,7 @@ click()
 				if(GetObjValue("UserItem") != "니퍼")
 				{
 //					SendMessage("자막", "문자출력", "3,You need a tool to cut it");
-					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text98");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text97");
 				}
 				else
 				{
@@ -113,7 +113,7 @@ click()
 		if($Step == 0)
 		{
 //			SendMessage("자막", "문자출력", "2,There is a mechanical lab over there");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text99");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text98");
 			SetObjValue("step", 1);
 		}
 		else
@@ -121,7 +121,7 @@ click()
 			if(GetObjValue("UserItem") != "니퍼")
 			{
 //				SendMessage("자막", "문자출력", "3,You need a tool to cut it");
-				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text98");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text97");
 			}
 			else if($Step != 2)
 			{

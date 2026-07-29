@@ -327,7 +327,7 @@ lockbox.click()
 	if(GetObjValue("UserItem") == GetObjValue("KeyName") && GetObjValue("OpenFlag") == CLOSE)
 	{
 //		SendMessage("자막", "문자출력", "2," + ($LockFlag == LOCK ? "It's unlocked" : "It's locked"));
-		SendMessage("타이머", "스크립트설정", "0 0 1 " + ($LockFlag == LOCK ? "_langtable.Text21" : "_langtable.Text22"));
+		SendMessage("타이머", "스크립트설정", "0 0 1 " + ($LockFlag == LOCK ? "_langtable.Text20" : "_langtable.Text21"));
 		SetObjValue("LockFlag", $LockFlag == LOCK ? UNLOCK : LOCK);
 		SendMessage("사운드", "연주", "잠긴소리01,data/sound/열쇠로나무문열기.wav");
 	}
@@ -371,5 +371,5 @@ click()
 
 	SendMessage("사운드", "연주", "잠긴소리01,data/sound/나무문잠긴것.wav");
 //	SendMessage("자막", "문자출력", "2,Locked");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 }

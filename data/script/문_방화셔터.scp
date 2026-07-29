@@ -50,7 +50,7 @@ type1.click()
 	
 	if($LockValue == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName"))
 	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text20");
 		SetValue(GetObjValue("Lock"), UNLOCK);
 		SendMessage("사운드", "연주", "잠긴소리01,data/sound/열쇠로나무문열기.wav");
 		return;
@@ -92,7 +92,7 @@ type1.click()
 	
 	SendMessage("사운드", "연주", "잠긴소리01,data/sound/돌리는문잠긴것.wav");
 //	SendMessage("자막", "문자출력", "2,Locked");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 }
 
 type2.pick()
@@ -107,7 +107,7 @@ type2.click()
 	
 	if($LockValue == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName"))
 	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text20");
 		SetValue(GetObjValue("Lock"), UNLOCK);
 		SendMessage("사운드", "연주", "잠긴소리01,data/sound/열쇠로나무문열기.wav");
 		return;
@@ -149,5 +149,5 @@ type2.click()
 
 	SendMessage("사운드", "연주", "잠긴소리01,data/sound/돌리는문잠긴것.wav");
 //	SendMessage("자막", "문자출력", "2,Locked");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 }

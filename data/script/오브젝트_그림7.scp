@@ -25,5 +25,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3,[웬수들] 군휴학중 이선우\\군대에서 제한된 도구만으로 이런 결과물을 만들다니 놀랍다");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text67");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text66");
 }

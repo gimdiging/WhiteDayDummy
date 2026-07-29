@@ -168,6 +168,6 @@ handle.click()
 	else
 	{
 //		SendMessage("자막", "문자출력", "2,금고는 잠겨있다");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text100");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text99");
 	}
 }

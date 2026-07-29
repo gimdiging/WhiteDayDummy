@@ -52,13 +52,13 @@ click()
 		if($Step == 0)
 		{
 //			SendMessage("자막", "문자출력", "3,It's a electronic safe. There is a \nstrange-looking rope around it");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text06");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text05");
 			SetObjValue("Step", $Step + 1);
 		}
 		else
 		{
 //			SendMessage("자막", "문자출력", "2,You can't open it.");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text07");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text06");
 		}
 	}
 	else

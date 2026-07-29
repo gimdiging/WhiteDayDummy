@@ -31,12 +31,12 @@ click()
 	if(GetObjValue("Step") == 0)
 	{
 //		SendMessage("자막", "문자출력", "2,It's a fire alarm.");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text10");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text09");
 		SetObjValue("Step", GetObjValue("Step") + 1);
 	}
 	else
 	{
 //		SendMessage("자막", "문자출력", "3,To stop the operation, cut off the power");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text04");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text03");
 	}
 }

@@ -29,12 +29,12 @@ click()
 	if(GetObjValue("Step") == 0)
 	{
 //		SendMessage("자막", "문자출력", "2,It seems to be overloaded");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text08");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text07");
 		SetObjValue("Step", GetObjValue("Step") + 1);
 	}
 	else
 	{
 //		SendMessage("자막", "문자출력", "2,You can do nothing. You should cut the power off");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text09");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text08");
 	}
 }

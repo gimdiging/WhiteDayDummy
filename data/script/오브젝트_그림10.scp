@@ -25,5 +25,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3,[무제] 작자미상\\--;");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text61");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text60");
 }

@@ -55,7 +55,7 @@ click()
 	{
 		SendMessage("사운드", "연주", "화장실실내잠긴소리,data\sound\나무문잠긴것.wav");
 //		SendMessage("자막", "문자출력", "2,It's locked");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text22");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text21");
 	}
 	else
 	{

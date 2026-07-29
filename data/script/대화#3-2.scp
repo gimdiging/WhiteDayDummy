@@ -41,7 +41,7 @@ Talking()
 		case 2:
 		{
 //			SendMessage("자막", "선택", "내 이름은 이희민. 기억나니? 지난 번에..\n괜찮아?\n여기서 뭐하고 있었니?");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text38");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text37");
 			break;
 		}
 		case 3:
@@ -69,7 +69,7 @@ Talking()
 		case 4:
 		{
 //			SendMessage("자막", "선택", "무슨일인지 모르지만 내가 도와줄께\n......\n오늘 학교 분위기가 이상해");
-			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text39");
+			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text38");
 			break;
 		}
 		case 5:

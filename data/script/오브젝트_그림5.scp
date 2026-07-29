@@ -25,5 +25,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3,[고요한 밤 거룩한 밤] 1학년 6반 양은성\\직접 그린 유화인가? 해상도가 낮아지니 질감이 나타나지 않아 안타깝다");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text65");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text64");
 }

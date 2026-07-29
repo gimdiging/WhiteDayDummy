@@ -48,7 +48,7 @@ click()
 	
 	if($Step == 0)
 	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text56");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text55");
 	}
 	else if($Step == 1)
 	{
@@ -62,7 +62,7 @@ GetItem()
 	SendMessage("토의조각", "발광", "Recursive off");
 	SendMessage("토의조각", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "토의조각");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text57");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text56");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_토의문장.Release");
 }
 

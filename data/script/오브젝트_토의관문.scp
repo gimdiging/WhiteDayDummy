@@ -53,11 +53,11 @@ click()
 		{
 			if($LUM_STICK <= 128.0)
 			{
-				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text75");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text74");
 			}
 			else
 			{
-				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable100.Text103");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable100.Text102");
 			}
 			SetObjValue("Step", $Step + 1);
 		}
@@ -67,7 +67,7 @@ click()
 			{
 				if($LUM_STICK <= 128.0)
 				{
-					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text77");
+					SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text76");
 				}
 				else
 				{
@@ -77,7 +77,7 @@ click()
 			}
 			else
 			{
-				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text78");
+				SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text77");
 			}
 		}
 	}

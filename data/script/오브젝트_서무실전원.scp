@@ -49,7 +49,7 @@ click()
 	if($Step == 0)
 	{
 //		SendMessage("자막", "문자출력", "3,전원콘센트이다. 각종 전기 장치의 전원을 견결시켜준다");
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text87");
+		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text86");
 	}
 	else if($Step == 1)
 	{

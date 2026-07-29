@@ -25,5 +25,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3,[소녀] 3학년 3반 박성근\\눈빛이 묘한 소녀이다. 무섭다");
-	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text69");
+	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text68");
 }
