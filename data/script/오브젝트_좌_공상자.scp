@@ -38,14 +38,5 @@ pick()
 click()
 {
 //	SendMessage("자막", "문자출력", "3," + GetObjValue("InfoText"));
-	$InfoText = GetObjValue("InfoText");
-	
-	if($InfoText == "배구공이 4개 있다")
-	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text93");
-	}
-	else if($InfoText == "농구공이 3개 있다")
-	{
-		SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text94");
-	}
+	SendMessage("타이머", "스크립트설정", "0 0 1 " + (GetObjValue("InfoText") == "배구공이 4개 있다" ? "_langtable.Text93" : "_langtable.Text94"));
 }

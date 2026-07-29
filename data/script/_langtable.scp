@@ -10,7 +10,8 @@
 //	熱血man: matzzang		last update: 2000.07.17
 //  --------------------------------------------------
 
-//SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text");
+//	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text");
+//	SendMessage("타이머", "스크립트설정", "0 0 1 " + ($A == B ? "_langtable.Text" : "_langtable.Text"));
 
 Text00()
 {
