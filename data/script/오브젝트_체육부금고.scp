@@ -17,6 +17,11 @@ Init()
 	SendMessage("", "스크립트설정", "left " + $WorkingFile + ".left");
 	SendMessage("", "스크립트설정", "right " + $WorkingFile + ".right");
 	SendMessage("", "스크립트설정", "handle " + $WorkingFile + ".handle");
+	SendMessage("", "스크립트설정", "dummy1 " + "null");
+	SendMessage("", "스크립트설정", "dummy2 " + "null");
+	SendMessage("", "스크립트설정", "dummy3 " + "null");
+	SendMessage("", "스크립트설정", "dummy4 " + "null");
+	SendMessage("", "스크립트설정", "dummy5 " + "null");
 	
 	SetObjValue("RotateValue", 0);
 	SetObjValue("RotateDial", 0);

@@ -12,6 +12,11 @@
 //	熱血man: matzzang		last update: 2000.07.22
 //  --------------------------------------------------
 
+Init()
+{
+	SetObjName("토의관문");
+}
+
 Init커서용()
 {
 	SendMessage("", "스크립트설정", "use " + $WorkingFile);
@@ -72,6 +77,7 @@ click()
 				else
 				{
 					SetValue(GetObjValue("Lock"), UNLOCK);
+					SendMessage("토의관문", "페이드", "Recursive 1 1 0");
 					SendMessage("유저", "폐기", "토의조각");
 				}
 			}
