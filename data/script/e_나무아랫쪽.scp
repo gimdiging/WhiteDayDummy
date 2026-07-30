@@ -217,8 +217,10 @@ DeadCheck()
 
 		SendMessage("유저", "위치바라보기", "" + FindPoint("아랫나무"));
 
-		SendMessage("나무아랫쪽", "애니메이션", "죽기");
-		SendMessage("나무윗쪽", "애니메이션", "죽어있기");
+//		SendMessage("나무아랫쪽", "애니메이션", "죽기");
+		SendMessage("나무아랫쪽", "애니메이션", "*force 죽기");
+//		SendMessage("나무윗쪽", "애니메이션", "죽어있기");
+		SendMessage("나무윗쪽", "애니메이션", "*force 죽어있기");
 		DeleteObject("나무윗쪽줄기");
 
 		SendMessage("소영", "위치", "" + FindPoint("소영위치1"));
