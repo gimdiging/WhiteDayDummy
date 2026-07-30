@@ -44,8 +44,10 @@ type1.pick()
 type1.click()
 {
 	$OpenFlag = GetObjValue("OpenFlag");
+//	$LockFlag = GetObjValue("LockFlag");
 	$LockValue = GetValue(GetObjValue("Lock"));
 	
+//	if($LockFlag == LOCK)
 	if($LockValue == LOCK)
 	{
 		SendMessage("사운드", "연주", "중앙통로문잠긴소리,data\sound\돌리는문잠긴것.wav");
@@ -95,8 +97,10 @@ type2.pick()
 type2.click()
 {
 	$OpenFlag = GetObjValue("OpenFlag");
+//	$LockFlag = GetObjValue("LockFlag");
 	$LockValue = GetValue(GetObjValue("Lock"));
 	
+//	if($LockFlag == LOCK)
 	if($LockValue == LOCK)
 	{
 		SendMessage("사운드", "연주", "중앙통로문잠긴소리,data\sound\돌리는문잠긴것.wav");

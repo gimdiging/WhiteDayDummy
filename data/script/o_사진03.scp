@@ -49,6 +49,7 @@ click()
 GetItem()
 {
 	SendMessage("사장님사진", "페이드", "Recursive 1 1 0");
+//	SendMessage("유저", "획득", "Passman");
 	SendMessage("유저", "획득", "패스맨");
 	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text24");
 	SendMessage("타이머", "스크립트설정", "1 0 1 o_사진03.Release");

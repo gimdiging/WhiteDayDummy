@@ -47,6 +47,7 @@ pick()
 		}
 		else if($Step == 1)
 		{
+//			if($USER_RISE == TRUE && GetObjValue("UserItem") == "Nippers")
 			if($USER_RISE == TRUE && GetObjValue("UserItem") == "니퍼")
 			{
 				return "i니퍼";
@@ -62,6 +63,7 @@ pick()
 		}
 		else if($Step == 1)
 		{
+//			if(GetObjValue("UserItem") == "Nippers")
 			if(GetObjValue("UserItem") == "니퍼")
 			{
 				return "i니퍼";
@@ -93,6 +95,7 @@ click()
 			}
 			else if($Step != 2)
 			{
+//				if(GetObjValue("UserItem") != "Nippers")
 				if(GetObjValue("UserItem") != "니퍼")
 				{
 //					SendMessage("자막", "문자출력", "3,You need a tool to cut it");
@@ -118,6 +121,7 @@ click()
 		}
 		else
 		{
+//			if(GetObjValue("UserItem") != "Nippers")
 			if(GetObjValue("UserItem") != "니퍼")
 			{
 //				SendMessage("자막", "문자출력", "3,You need a tool to cut it");

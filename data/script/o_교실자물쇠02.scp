@@ -16,6 +16,7 @@ Init()
 {
 	SendMessage("", "스크립트설정", "lock " + $WorkingFile);
 	SetObjValue("KeyName", "마스터키");
+//	SetObjValue("iconname", "");
 	SetObjValue("iconname", "마스터키");
 }
 
@@ -130,6 +131,7 @@ Init중앙통로자물쇠()
 {
 	Init();
 	SetObjValue("Lock", "$문_중앙통로");
+//	SetObjValue("KeyName", "Key of the Main Hallway");
 	SetObjValue("KeyName", "중앙통로열쇠");
 	SetObjValue("iconname", "중앙통로열쇠");
 	SendMessage("", "페이드", "Tube 0 1 0");

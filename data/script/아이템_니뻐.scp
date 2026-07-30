@@ -49,6 +49,7 @@ click()
 GetItem()
 {
 	SendMessage("니퍼", "페이드", "Recursive 1 1 0");
+//	SendMessage("유저", "획득", "Nippers");
 	SendMessage("유저", "획득", "니퍼");
 	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text44");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_니뻐.Release");

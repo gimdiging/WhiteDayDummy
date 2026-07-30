@@ -53,6 +53,7 @@ click()
 GetItem()
 {
 	SendMessage("목의조각", "페이드", "Recursive 1 1 0");
+//	SendMessage("유저", "획득", "Piece of the 'Tree' Emblem");
 	SendMessage("유저", "획득", "목의조각");
 	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text46");
 	SendMessage("타이머", "스크립트설정", "1 0 1 아이템_목의문장.Release");

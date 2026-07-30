@@ -40,6 +40,7 @@ Init1층서무실옆방화셔터()
 
 type1.pick()
 {
+//	return "잡기";
 	return (GetValue(GetObjValue("Lock")) == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName")) ? "i방화셔터열쇠" : "잡기";
 }
 
@@ -97,6 +98,7 @@ type1.click()
 
 type2.pick()
 {
+//	return "잡기";
 	return (GetValue(GetObjValue("Lock")) == LOCK && GetObjValue("UserItem") == GetObjValue("KeyName")) ? "i방화셔터열쇠" : "잡기";
 }
 

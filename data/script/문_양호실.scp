@@ -23,6 +23,7 @@ Init()
 	SetObjValue("Lock", "$문_이유없이열린문");
 }
 
+//Init()
 Init숙직실()
 {
 	Init();

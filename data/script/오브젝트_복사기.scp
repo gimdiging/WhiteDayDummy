@@ -24,11 +24,13 @@ Init()
 
 table.pick()
 {
+//	return (GetObjValue("Step") == 2 && GetObjValue("UserItem") == "具堡胶平") ? "i具堡胶平" : "";
 	return (GetObjValue("Step") == 2 && GetObjValue("UserItem") == "具堡胶平" && !$酒捞袍_具堡胶平_面傈吝) ? "i具堡胶平" : "";
 }
 
 table.click()
 {
+//	if(GetObjValue("Step") == 2 && GetObjValue("UserItem") == "具堡胶平")
 	if(GetObjValue("Step") == 2 && GetObjValue("UserItem") == "具堡胶平" && !$酒捞袍_具堡胶平_面傈吝)
 	{
 		SendMessage("蜡历", "企扁", "具堡胶平");

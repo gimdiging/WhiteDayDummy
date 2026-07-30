@@ -273,6 +273,7 @@ Init가정실습실앞()
 	Init();
 	SetObjValue("LockFlag", LOCK);
 	SetObjValue("Lock", "$문_가정실습실앞");
+//	SetObjValue("KeyName", "Key of the Cooking Practice Room");
 	SetObjValue("KeyName", "가정실습실열쇠");
 }
 
@@ -281,6 +282,7 @@ Init가정실습실뒤()
 	Init();
 	SetObjValue("LockFlag", LOCK);
 	SetObjValue("Lock", "$문_가정실습실뒤");
+//	SetObjValue("KeyName", "Key of the Cooking Practice Room");
 	SetObjValue("KeyName", "가정실습실열쇠");
 }
 
@@ -316,6 +318,7 @@ OpenDoor()
 
 lockbox.pick()
 {
+//	return (GetObjValue("UserItem") == "Key of the Cooking Practice Room" && GetObjValue("OpenFlag") == CLOSE) ? "i가정실습실열쇠" : "";
 	return (GetObjValue("UserItem") == "가정실습실열쇠" && GetObjValue("OpenFlag") == CLOSE) ? "i가정실습실열쇠" : "";
 }
 

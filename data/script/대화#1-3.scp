@@ -98,6 +98,7 @@ Talking()
 		}
 		case 9:
 		{
+//			SendMessage("유저", "획득", "Key of the Main Hallway");
 			SendMessage("유저", "획득", "중앙통로열쇠");
 			SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text32");
 			SendMessage("성아", "애니메이션", "쉬기");

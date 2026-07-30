@@ -16,6 +16,7 @@ Init()
 {
 	SendMessage("", "스크립트설정", "item " + $WorkingFile);
 	SetObjValue("Step", 0);
+//	SetObjName("나침반");
 	SetObjName("나침판");
 }
 
@@ -42,6 +43,7 @@ click()
 
 GetItem()
 {
+//	SendMessage("나침반", "페이드", "Recursive 1 1 0");
 	SendMessage("나침판", "페이드", "Recursive 1 1 0");
 	SendMessage("유저", "획득", "나침반");
 	SendMessage("타이머", "스크립트설정", "0 0 1 _langtable.Text42");
@@ -50,5 +52,6 @@ GetItem()
 
 Release()
 {
+//	DeleteObject("나침반");
 	DeleteObject("나침판");
 }
