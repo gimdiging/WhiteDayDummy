@@ -93,5 +93,7 @@ LoadObject()
 
 	LoadObject("WObjStaticBody", "", "*pos -1085.57 104.23 1974.16 *rot 180.0 46.0 0.0 *pet data/puppet/item/아이템_쪽지01.pet *scale 0.5 *script i_목걸이.Init커서용");
 	LoadObject("WObjStaticBody", "", "*pos -1959.63 153.41 1190.68 *rot 105.0 5.0 0.0 *pet data/puppet/item/아이템_목의문장.pet *scale 1.0 *script 아이템_토의문장.Init커서용");
+	LoadObject("WObjStaticBody", "", "*pos -1043.92 12.62 1965.44 *rot 90.0 -90.0 0.0 *pet data/puppet/item/아이템_목의문장.pet *scale 1.0 *script 오브젝트_목의관문.Init목의문장");
 	LoadObject("WObjStaticBody", "", "*pos -1127.09 12.71 1978.49 *rot 90.0 90.0 0.0 *pet data/puppet/obj/오브젝트_목의관문.pet *scale 1.0 *script 오브젝트_토의관문.Init커서용");
+	LoadObject("WObjStaticBody", "", "*pos -1125.09 12.71 1978.49 *rot 90.0 90.0 0.0 *pet data/puppet/item/아이템_토의문장.pet *scale 1.0 *script 오브젝트_토의관문.Init토의문장");
 }

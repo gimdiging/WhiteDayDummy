@@ -12,11 +12,6 @@
 //	熱血man: matzzang		last update: 2000.07.22
 //  --------------------------------------------------
 
-Init()
-{
-	SetObjName("토의관문");
-}
-
 Init커서용()
 {
 	SendMessage("", "스크립트설정", "use " + $WorkingFile);
@@ -24,6 +19,12 @@ Init커서용()
 	SetObjValue("KeyName", "토의조각");
 	SetObjValue("Lock", "$문_본관2연결문");
 	SendMessage("", "페이드", "Recursive 0 0 0");
+}
+
+Init토의문장()
+{
+	SendMessage("", "페이드", "Recursive 0 0 0");
+	SetObjName("토의문장");
 }
 
 pick()
@@ -77,8 +78,8 @@ click()
 				else
 				{
 					SetValue(GetObjValue("Lock"), UNLOCK);
-					SendMessage("토의관문", "페이드", "Recursive 1 1 0");
 					SendMessage("유저", "폐기", "토의조각");
+					SendMessage("토의문장", "페이드", "Recursive 0 1 1");
 				}
 			}
 			else

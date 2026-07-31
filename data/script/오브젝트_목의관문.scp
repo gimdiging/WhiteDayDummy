@@ -20,6 +20,13 @@ Init()
 	SetObjValue("Lock", "$문_1층서무실옆방화셔터");
 }
 
+Init목의문장()
+{
+	SendMessage("", "반짝", "off");
+	SendMessage("", "페이드", "Recursive 0 0 0");
+	SetObjName("목의문장");
+}
+
 pick()
 {
 	$KeyName = GetObjValue("KeyName");
@@ -74,8 +81,9 @@ click()
 				else
 				{
 					SetValue(GetObjValue("Lock"), UNLOCK);
-					SendMessage("", "페이드", "Recursive 1 1 0");
+//					SendMessage("", "페이드", "Recursive 1 1 0");
 					SendMessage("유저", "폐기", "목의조각");
+					SendMessage("목의문장", "페이드", "Recursive 0 1 1");
 				}
 			}
 			else
