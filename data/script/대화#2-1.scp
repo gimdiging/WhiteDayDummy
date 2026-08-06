@@ -144,7 +144,8 @@ Talking()
 		{
 			SendMessage("자막", "다이얼로그출력", "d03_011");
 			SendMessage("지현", "이동", FindPoint($대화_지현 == 1 ? "지현퇴장위치2" : "지현퇴장위치1") + " 손흔들며달리기");
-			SendMessage("타이머", "스크립트설정", "3 0 1 대화#2-1.Talking");
+//			SendMessage("타이머", "스크립트설정", "3 0 1 대화#2-1.Talking");
+			$TalkingStep++;
 			break;
 		}
 		case 13:
@@ -172,7 +173,8 @@ Talking()
 		{
 			SendMessage("자막", "다이얼로그출력", "d03_015");
 			SendMessage("지현", "이동", FindPoint($대화_지현 == 1 ? "지현퇴장위치2" : "지현퇴장위치1") + " 걷기2");
-			SendMessage("타이머", "스크립트설정", "3 0 1 대화#2-1.Talking");
+//			SendMessage("타이머", "스크립트설정", "3 0 1 대화#2-1.Talking");
+			$TalkingStep++;
 			break;
 		}
 		case 23:
