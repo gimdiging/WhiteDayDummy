@@ -12,6 +12,10 @@
 //	熱血man: matzzang		last update: 2000.07.22
 //  --------------------------------------------------
 
+Init()
+{
+}
+
 Init커서용()
 {
 	SendMessage("", "스크립트설정", "use " + $WorkingFile);
