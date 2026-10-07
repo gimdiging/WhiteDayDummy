@@ -1,0 +1,1 @@
+data/backup/main1.wed needs data/puppet/obj/o_교실의자.pet from whiteday100.nop.
