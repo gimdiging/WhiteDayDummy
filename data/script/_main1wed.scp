@@ -891,23 +891,23 @@ Loading()
 	LoadObject("WObjStaticBody", "", "*pos -1918.95 206.29 1338.94 *rot 0.0 180.0 -5.0 *pet data/puppet/Obj/오브젝트_급훈03.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1962.19 195.84 1651.16 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/오브젝트_급훈03.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1948.67 104.11 1396.83 *rot 0.0 10.0 0.0 *pet data/puppet/Obj/o_교실책상.pet *scale 1.00");
-	LoadObject("WObjStaticBody", "", "*pos -1952.57 104.00 1377.51 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/100_o_교실의자.pet *scale 1.00"); //crash
+	LoadObject("WObjStaticBody", "", "*pos -1952.57 104.00 1377.51 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/o_교실의자.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -2031.91 107.31 1641.87 *rot -18.0 26.0 0.0 *pet data/puppet/Obj/오브젝트_빗자루02.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -2034.75 99.67 1632.40 *rot 0.0 62.0 0.0 *pet data/puppet/Obj/오브젝트_대걸레08.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -2023.77 108.00 1640.12 *rot 0.0 74.0 28.0 *pet data/puppet/Obj/오브젝트_빗자루05.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -2017.28 105.00 1358.64 *rot 0.0 42.0 0.0 *pet data/puppet/Obj/오브젝트_쓰레받이02.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1815.20 20.00 1650.80 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/오브젝트_버튼1스위치.pet *scale 1.00 *script 오브젝트_버튼1스위치.Init교실2_1");
 	LoadObject("WObjStaticBody", "", "*pos -1995.90 113.80 1057.20 *rot -10.0 7.0 -84.0 *pet data/puppet/Obj/o_교실책상.pet *scale 1.00 *AlignBox");
-	LoadObject("WObjStaticBody", "", "*pos -1898.30 106.20 1052.90 *rot 16.0 14.0 0.0 *pet data/puppet/Obj/100_o_교실의자.pet *scale 1.00 *AlignBox"); //crash
+	LoadObject("WObjStaticBody", "", "*pos -1898.30 106.20 1052.90 *rot 16.0 14.0 0.0 *pet data/puppet/Obj/o_교실의자.pet *scale 1.00 *AlignBox");
 	LoadObject("WObjStaticBody", "", "*pos -1920.95 104.00 1171.07 *rot 0.0 -17.0 0.0 *pet data/puppet/Obj/오브젝트_책상과의자01.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1849.77 104.00 1255.89 *rot 0.0 37.0 0.0 *pet data/puppet/Obj/오브젝트_책상과의자02.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1815.80 104.00 1142.80 *rot 0.0 -14.0 0.0 *pet data/puppet/Obj/오브젝트_책상과의자01.pet *scale 1.00");
-	LoadObject("WObjStaticBody", "", "*pos -1884.53 110.16 1146.47 *rot 90.0 47.0 0.0 *pet data/puppet/Obj/100_o_교실의자.pet *scale 1.00"); //crash
+	LoadObject("WObjStaticBody", "", "*pos -1884.53 110.16 1146.47 *rot 90.0 47.0 0.0 *pet data/puppet/Obj/o_교실의자.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -2009.90 104.00 1198.49 *rot 0.0 68.0 0.0 *pet data/puppet/Obj/o_교실책상.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1810.00 149.00 1330.90 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/오브젝트_버튼1스위치.pet *scale 1.00 *script 오브젝트_버튼1스위치.Init교실2_8");
 	LoadObject("WObjStaticBody", "", "*pos -1846.40 -23.78 1170.45 *rot 0.0 24.0 0.0 *pet data/puppet/Obj/오브젝트_책상과의자01.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1902.65 -23.94 1091.44 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/오브젝트_책상과의자02.pet *scale 1.00");
-	LoadObject("WObjStaticBody", "", "*pos -1964.75 -18.10 1172.91 *rot 90.0 27.0 0.0 *pet data/puppet/Obj/100_o_교실의자.pet *scale 1.00"); //crash
+	LoadObject("WObjStaticBody", "", "*pos -1964.75 -18.10 1172.91 *rot 90.0 27.0 0.0 *pet data/puppet/Obj/o_교실의자.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1982.88 -23.87 1106.68 *rot 0.0 35.0 0.0 *pet data/puppet/Obj/o_교실책상.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1845.23 -23.83 1235.55 *rot 0.0 -47.0 0.0 *pet data/puppet/Obj/오브젝트_책상과의자02.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1810.20 19.00 1330.90 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/오브젝트_버튼1스위치.pet *scale 1.00 *script 오브젝트_버튼1스위치.Init교실2_2");
@@ -915,7 +915,7 @@ Loading()
 	LoadObject("WObjStaticBody", "", "*pos -1999.40 29.80 1008.32 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/o_교실게시판앞쪽03.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1813.10 18.30 1010.90 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/오브젝트_버튼1스위치.pet *scale 1.00 *script 오브젝트_버튼1스위치.Init교실2_3");
 	LoadObject("WObjStaticBody", "", "*pos -2012.20 -23.91 956.09 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/o_교실책상.pet *scale 1.00");
-	LoadObject("WObjStaticBody", "", "*pos -2003.17 -23.91 931.06 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/100_o_교실의자.pet *scale 1.00"); //crash
+	LoadObject("WObjStaticBody", "", "*pos -2003.17 -23.91 931.06 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/o_교실의자.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1922.84 30.15 1008.57 *rot 0.0 0.0 0.0 *pet data/puppet/Obj/100_o_교실칠판03.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1920.14 24.82 702.30 *rot 0.0 180.0 0.0 *pet data/puppet/Obj/o_교실게시판중앙04.pet *scale 1.00");
 	LoadObject("WObjStaticBody", "", "*pos -1838.75 28.02 700.91 *rot 0.0 180.0 0.0 *pet data/puppet/Obj/o_교실게시판뒤쪽05.pet *scale 1.00");
